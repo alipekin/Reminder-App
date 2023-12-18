@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "445841794778",
+    "project_id": "reminder-ece83",
+    "storage_bucket": "reminder-ece83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445841794778:android:911e0ae744a246731ae7e3",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF3wFMLMGnmyqxxL1kV-tO9X7i5TQSZ1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".GirisActivity">
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/textViewCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@color/design_default_color_secondary"
+        android:text="Hatırlatma Ekle"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Tarih Seçimi -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hatırlatma Tarihi" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="162dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <!-- Saat Seçimi -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hatırlatma Saati" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:timePickerMode="spinner" />
+
+    <!-- Zil Sesi Seçimi -->
+    <Button
+        android:id="@+id/selectRingtoneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="zil"
+        android:text="Zil Sesi Seç" />
+
+    <!-- Seçilen Zil Sesi -->
+    <TextView
+        android:id="@+id/selectedRingtoneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seçilen zil sesi: "
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:visibility="gone" />
+
+    <!-- Hatırlatma Açıklaması -->
+    <EditText
+        android:id="@+id/reminderDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="Hatırlatma Açıklaması"
+        android:lines="3" />
+
+    <!-- Hatırlatma Öncesi Süre (Offset) -->
+    <EditText
+        android:id="@+id/offsetEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Hatırlatma Öncesi Süre (Dakika)" />
+
+    <!-- Kaydet Butonu -->
+    <Button
+        android:id="@+id/saveReminderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="hatırlatmaKaydet"
+        android:text="Kaydet" />
+</LinearLayout>
